@@ -7,4 +7,4 @@ WORKDIR /app
 RUN pip install -r requirements.txt
 
 ENTRYPOINT [ "python3" ]
-CMD [ "main.py" ]
+CMD [ "bot.py" ]
