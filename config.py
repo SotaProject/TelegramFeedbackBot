@@ -1,4 +1,5 @@
 from utils import get_env_var
+import os
 
 FEEDBACK_CHAT = int(get_env_var("FEEDBACK_CHAT"))
 TOKEN = get_env_var("TOKEN")
@@ -9,6 +10,6 @@ COMMANDS = {
     "start": {
         "set_command": False,
         "description": "",
-        "text": "Привет! Это бот поддержки",
+        "text": os.environ.get("START_TEXT", "Привет! Это бот поддержки")
     }
 }
