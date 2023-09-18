@@ -380,7 +380,7 @@ async def handle_command(message: types.Message):
     command = message.text[1:]
 
     if command not in COMMANDS.keys():
-        await message.answer("Не известная команда")
+        await message.answer("Неизвестная команда")
         return
 
     await message.reply(
